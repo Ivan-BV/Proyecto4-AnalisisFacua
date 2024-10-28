@@ -15,8 +15,9 @@
 3. Análisis de Datos:
 
     - Comparación de Precios entre Supermercados: Identificar qué supermercados ofrecen los precios más competitivos y cuáles tienden a ser más caros, para cada producto específico.
-    - Análisis de la Evolución de Precios: Evaluar la tendencia de los precios en los distintos supermercados a lo largo del tiempo, observando posibles patrones o cambios significativos.
     - Detección de Anomalías: Identificar subidas o bajadas de precios inusuales que podrían señalar prácticas abusivas o promociones.
+    - Análisis de la Dispersión de Precios: Evaluar la variabilidad de los precios de un mismo producto en diferentes supermercados.
+    - Comparación de Precios Promedio: Calcular y comparar los precios promedio de cada producto en diferentes supermercados.
 
 4. Visualización de Datos: Crear gráficos y visualizaciones que permitan una comprensión clara de los resultados obtenidos en el análisis, facilitando la comparación y el seguimiento de las fluctuaciones de precios entre los diferentes supermercados.
 
@@ -59,42 +60,43 @@ pip install -r requirements.txt
 
 ## 📊 Resultados y Conclusiones
 
-Tras analizar los datos recogidos sobre los precios de cada categoria de productos se han generado diferentes gráficos.
+Tras analizar los datos recogidos sobre los precios de cada categoria de productos se han generado diferentes gráficos:
 
 <img src="imagenes/precios_aceite_girasol.png" />
 
 
 - Conclusión de la comparativa de precios del *aceite de girasol*:
-    - En cuanto a los precios más bajos **Eroski** e **Hipercor** son las opciones más económicas. La diferencia de precio con respecto al resto de supermercados es bastante notable. De otra forma, **Carrefour** presenta un precio significativamente más alto. Con respecto a los precios más altos **Carrefour** sigue destacando como el supermercado más caro.
-    - Para este producto, **Eroski** e **Hipercor** son las mejores opciones para aquellos que buscan ahorrar, mientras que Carrefour se muestra la opción menos competitiva.
-
+    - En cuanto a variabilidad de precios, **Alcampo**, **Carrefour** y **Dia** presentan un rango amplio de precios, con **Alcampo** y **Carrefour** mostrando valores atípicos bastante altos.
+    - Distribución de precios: **Mercadona** y **Eroski** parecen ofrecer precios más estables y bajos en comparación con otros supermercados. **Alcampo** y **Carrefour**, por otro lado, tienen precios más dispersos y algunos valores atípicos elevados, lo que indica que podrían tener opciones de aceite de girasol premium o en presentaciones más grandes.
+    - En resumen, **Mercadona** y **Eroski** ofrecen precios de aceite de girasol más consistentes y económicos, mientras que **Alcampo** y **Carrefour** presentan una mayor variación, con algunos precios altos fuera del rango típico.
 
 <img src="imagenes/precios_aceite_oliva.png" />
 
 
 - Conclusión de la comparativa de precios del *aceite de oliva*:
-    - **Carrefour** y **DIA** son los supermercados más asequibles, seguidos de cerca por **Eroski** y **Mercadona**.
-    **Alcampo** e **Hipercor** tienen precios notablemente superiores.
-    - Los supermercados **Carrefour**, **DIA**, **Eroski** y **Mercadona** ofrecen precios bastante competitivos porlo que se ajustan al precio de mercado con el fin de elegir cualquiera de estos supermercados para comprar este producto.
+    - En cuanto a la variabilidad de precios, el precio del *aceite de oliva* muestra una variabilidad aún mayor en comparación con el *aceite de girasol*.
+    **Eroski** y **Dia** tienen numerosos valores atípicos, lo que sugiere que disponen de una amplia gama de productos de *aceite de oliva* con distintas calidades y precios.
+    - Hipercor y Alcampo también muestran precios elevados, aunque los precios en **Hipercor** parecen ser más altos en promedio y presentan varios valores atípicos, lo cual indica una posible oferta de productos de mayor calidad o en tamaños más grandes.
+    - En resumen, Los precios del *aceite de oliva* son más altos y variables que los del aceite de girasol. **Hipercor** y **Alcampo** tienden a tener precios más altos, mientras que Dia y Eroski presentan la mayor dispersión, sugiriendo una amplia gama de opciones en estos supermercados.
 
 
 <img src="imagenes/precios_leche.png" />
 
 
-Además, **Eroski** sigue siendo el más barato en cuanto a la media de precios más caros con 1.55€.
-**Carrefour** se mantiene como el más caro dentro de la media de precios bajos con 4.23€.
-
 - Conclusión de la comparativa de precios de la *leche*:
-    - En cuanto a los precios más bajos **Eroski** e **Hipercor** son las opciones más económicas una vez más. Los precios en **Alcampo**, **Carrefour**, y **DIA** son muy similares y se encuentran en un nivel intermedio-alto, mientras que **Mercadona** tiene un precio notablemente superior.
-    - Para realizar la compra de este producto, **Eroski** e **Hipercor** siguen siendo las mejores opciones para aquellos que buscan economizar, mientras que Mercadona tiende a precios más elevados.
+    - La leche es el producto con menos variabilidad en comparación con los aceites. La mayoría de los supermercados tienen precios relativamente estables, aunque Carrefour y Dia presentan valores atípicos dispersos que indican opciones de leche más caras.
+    - En cuanto a la distribución de precios, Mercadona, Alcampo y Eroski tienen precios más consistentes y bajos en promedio, con menos valores atípicos. Esto sugiere que estos supermercados mantienen un precio uniforme para sus productos de leche.
+    - En resumen, La leche tiene menos variabilidad de precio en comparación con los aceites, y Mercadona, Alcampo y Eroski destacan por tener precios más consistentes y bajos.
 
 - Conclusión final:
-    - En estas comparativas, podemos apreciar como **Eroski** e **Hipercor** ofrecen precios bajos y consistentes en los productos como el *aceite de girasol* y la *leche*, posicionándose como una opción económica para consumidores que buscan ahorrar. Algo a tener en cuenta es que parece ser que esto se debe a su falta de variedad en cada categoria de productos. Sin embargo, **Carrefour** y **DIA** destacan en precios competitivos para el *aceite de oliva*. **Mercadona** y **Alcampo** tienen un comportamiento variable con precios, en algunos productos, más elevados. Especialmente en la *leche* para el caso de **Mercadona** y el *aceite de oliva* para el caso de **Alcampo**.
+    - En general, la variabilidad de precios es menor para la *leche* y mayor para el *aceite de oliva*.
+    Los supermercados **Mercadona** y **Eroski** suelen ofrecer precios más estables y económicos en los tres productos, mientras que **Carrefour**, **Alcampo** y **Dia** muestran una mayor dispersión de precios, especialmente en los aceites, lo que sugiere una mayor diversidad de productos o calidades en estos establecimientos.
+
 
 ## 🔄 Próximos Pasos
 
-- Implementar en el análisis la detección de anomalias y la dispersión de precios.
-- Ampliar la busqueda de historiales de los últimos 30 días para hacer un análisis más preciso.
+- Implementar análisis de la evolución historica de precios.
+- Ampliar la busqueda de historiales de los últimos 30 días de productos especificos para hacer un análisis más preciso.
 - Optimización de la obtención de URLs en las que se encuentran los datos historicos.
 - Aumentar la precisión del análisis separando por capacidad de los envases.
 
